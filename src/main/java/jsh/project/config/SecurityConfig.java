@@ -29,14 +29,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
     protected void configure(HttpSecurity http) throws Exception {
         //권한 설정
 		http.authorizeRequests()
-            .antMatchers("/").permitAll();
+            .antMatchers("/").hasRole("ADMIN");
 
         //로그인 설정
         http.formLogin()
             .loginPage("/login")
             .defaultSuccessUrl("/")
             .permitAll();
-
+            
         //로그아웃 설정
         http.logout()
             .invalidateHttpSession(true)
