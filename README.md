@@ -4,10 +4,10 @@
 
 
 환경
-SpringBoot 2.x
-Mybatis
-Oracle11g
-maven
+* SpringBoot 2.x
+* Mybatis
+* Oracle11g
+* maven
 
 기능 목록
 * 로그인
